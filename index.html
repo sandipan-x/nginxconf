@@ -160,6 +160,10 @@ body{font-family:var(--body);background:var(--bg);color:var(--ink);line-height:1
 
 .nx-wrap{max-width:1080px;margin:0 auto;padding:8px 4px;font-family:Inter,system-ui,sans-serif;color:#101A33}.nx-head{text-align:center;padding:32px 14px 20px}.nx-logo{font-size:42px}.nx-h1{font-family:'JetBrains Mono',monospace;font-size:clamp(1.7rem,4vw,2.4rem);margin:12px 0 8px}.nx-tag{color:#5C6B8A;font-size:1rem;max-width:560px;margin:0 auto}.nx-grid{display:grid;grid-template-columns:220px 1fr;gap:18px;align-items:start;margin-top:8px}.nx-rail{background:#fff;border:1px solid #D9DFF2;border-radius:18px;padding:14px;display:grid;gap:8px}.nx-mode{background:#F7F5FF;border:1.5px solid #D9DFF2;border-radius:12px;padding:14px;font-weight:700;cursor:pointer;text-align:left;color:#101A33;min-height:52px;font-size:.92rem;font-family:'JetBrains Mono',monospace}.nx-mode.active{background:#2F6FED;border-color:#2F6FED;color:#fff}.nx-mode small{display:block;font-weight:400;font-size:.75rem;opacity:.75;margin-top:3px}.nx-work{background:#fff;border:1px solid #D9DFF2;border-radius:18px;padding:24px;box-shadow:0 16px 44px -30px rgba(47,111,237,.35)}.nx-h2{font-family:'JetBrains Mono',monospace;font-size:1.1rem;margin:0 0 16px}.nx-fields{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:14px}.nx-field{display:grid;gap:7px;font-size:.84rem;font-weight:600;color:#5C6B8A}.nx-field input{border:1.5px solid #D9DFF2;border-radius:10px;padding:12px 14px;font-size:.95rem;min-height:48px;width:100%;box-sizing:border-box;color:#101A33;font-family:'JetBrains Mono',monospace}.nx-field input:focus{outline:2px solid #2F6FED;border-color:#2F6FED}.nx-checks{display:flex;gap:16px;flex-wrap:wrap;margin-bottom:16px}.nx-check{display:flex;align-items:center;gap:8px;font-size:.9rem;font-weight:600;color:#101A33;cursor:pointer;min-height:44px}.nx-check input{width:20px;height:20px;accent-color:#2F6FED}.nx-out{background:#101A33;border-radius:14px;padding:20px;overflow-x:auto;margin-bottom:14px}.nx-out pre{margin:0;color:#D7E3FF;font-family:'JetBrains Mono',monospace;font-size:.85rem;line-height:1.65;white-space:pre}.nx-actions{display:flex;gap:10px;flex-wrap:wrap}.nx-btn{background:#2F6FED;color:#fff;border:0;border-radius:10px;padding:13px 22px;font-weight:700;cursor:pointer;min-height:48px;font-family:'JetBrains Mono',monospace}.nx-btn:hover{background:#2059cc}.nx-btn2{background:#fff;color:#2F6FED;border:1.5px solid #2F6FED;border-radius:10px;padding:13px 22px;font-weight:700;cursor:pointer;min-height:48px}.nx-tip{font-size:.82rem;color:#5C6B8A;margin-top:14px;line-height:1.6}.nx-tip code{background:#EEF2FD;padding:2px 7px;border-radius:6px;font-family:'JetBrains Mono',monospace}@media(max-width:760px){.nx-grid{grid-template-columns:1fr}.nx-rail{grid-template-columns:repeat(3,1fr)}.nx-fields{grid-template-columns:1fr}.nx-work{padding:18px 14px}}
 </style>
+<link rel="preconnect" href="https://www.highrevenueformat.com">
+<link rel="preconnect" href="https://peacefulbicycle.com">
+<link rel="dns-prefetch" href="https://www.highrevenueformat.com">
+<link rel="dns-prefetch" href="https://peacefulbicycle.com">
 </head>
 <body>
 <header class="fx-header">
@@ -218,7 +222,26 @@ body{font-family:var(--body);background:var(--bg);color:var(--ink);line-height:1
   </div>
 </div>
   </section>
-  <article class="article-sec" aria-label="Guide">
+  <div class="no-print mx-auto max-w-6xl px-4 sm:px-6 pb-4" role="complementary" aria-label="Advertisement">
+  <div class="mx-auto text-center" style="max-width:300px">
+    <span class="block text-[10px] tracking-[0.18em] uppercase text-slate-400 mb-1.5">Advertisement</span>
+    <div class="flex justify-center overflow-hidden">
+      <script>
+      (function(grnp){
+      var d = document,
+          s = d.createElement('script'),
+          l = d.currentScript || d.scripts[d.scripts.length - 1];
+      s.settings = grnp || {};
+      s.src = "\/\/peacefulbicycle.com\/bnXtVJsnd.GElF0oYVWQcY\/Qe\/mf9qu-ZqUtlZk\/PzTHcx1LM\/jWIZwkMTj\/U\/t-NrzmUnyOMsj\/AzydO\/Qx";
+      s.async = true;
+      s.referrerPolicy = 'no-referrer-when-downgrade';
+      l.parentNode.insertBefore(s, l);
+      })({})
+      </script>
+    </div>
+  </div>
+</div>
+<article class="article-sec" aria-label="Guide">
 <h2>What an Nginx Server Block Does</h2>
 <p>Every website nginx serves is described by a server block: a declaration of which domain names it answers to, which port it listens on, and how each request path is handled. The three patterns in this generator cover the vast majority of real deployments. A static site serves files from disk. A reverse proxy forwards requests to an application (Node, Python, Go) running on localhost. A PHP site hands .php files to PHP-FPM. Choosing the wrong pattern is the root cause of most nginx confusion — so start by naming yours.</p>
 <h2>Pattern 1: Static Sites</h2>
@@ -272,25 +295,6 @@ body{font-family:var(--body);background:var(--bg);color:var(--ink);line-height:1
 <details><summary>What causes nginx 502 Bad Gateway?</summary><p>A 502 means nginx is running but the upstream is not — your app process is down, the PHP-FPM socket path is wrong, or the port in proxy_pass does not match. Check the upstream first, not nginx.</p></details>
   </section>
 </main>
-<div class="no-print mx-auto max-w-6xl px-4 sm:px-6 pb-4" role="complementary" aria-label="Advertisement">
-  <div class="mx-auto text-center" style="max-width:300px">
-    <span class="block text-[10px] tracking-[0.18em] uppercase text-slate-400 mb-1.5">Advertisement</span>
-    <div class="flex justify-center overflow-hidden">
-      <script>
-      (function(grnp){
-      var d = document,
-          s = d.createElement('script'),
-          l = d.currentScript || d.scripts[d.scripts.length - 1];
-      s.settings = grnp || {};
-      s.src = "\/\/peacefulbicycle.com\/bnXtVJsnd.GElF0oYVWQcY\/Qe\/mf9qu-ZqUtlZk\/PzTHcx1LM\/jWIZwkMTj\/U\/t-NrzmUnyOMsj\/AzydO\/Qx";
-      s.async = true;
-      s.referrerPolicy = 'no-referrer-when-downgrade';
-      l.parentNode.insertBefore(s, l);
-      })({})
-      </script>
-    </div>
-  </div>
-</div>
 <footer class="fx-footer">
   <div class="fx-container">
     <div class="fx-brand">NginxConf</div>
